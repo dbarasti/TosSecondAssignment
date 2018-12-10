@@ -61,42 +61,34 @@
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.7.1.201405082137</version>
-		</plugin>
-
-		<!--
-		<plugin>
-			<groupId>org.jacoco</groupId>
-			<artifactId>jacoco-maven-plugin</artifactId>
-			<version>0.7.1.201405082137</version>
 			<executions>
 				<execution>
-					<id>jacoco-initialize</id>
-					<goals>
-						<goal>prepare-agent</goal>
+					<id>default-prepare-agent</id>
+					<goals><goal>prepare-agent</goal>
 					</goals>
 				</execution>
 				<execution>
-					<id>jacoco-report</id>
-					<phase>test</phase>
+					<id>default-report</id>
 					<goals>
 						<goal>report</goal>
 					</goals>
 				</execution>
 				<execution>
-					<id>jacoco-check</id>
-					<phase>test</phase>
+					<id>default-check</id>
 					<goals>
 						<goal>check</goal>
 					</goals>
 					<configuration>
 						<rules>
+							<!-- implementation is needed only for Maven 2 -->
 							<rule implementation="org.jacoco.maven.RuleConfiguration">
 								<element>BUNDLE</element>
 								<limits>
+									<!-- implementation is needed only for Maven 2 -->
 									<limit implementation="org.jacoco.report.check.Limit">
-										<counter>INSTRUCTION</counter>
+										<counter>COMPLEXITY</counter>
 										<value>COVEREDRATIO</value>
-										<minimum>1.00</minimum>
+										<minimum>0.60</minimum>
 									</limit>
 								</limits>
 							</rule>
@@ -105,11 +97,12 @@
 				</execution>
 			</executions>
 		</plugin>
-		-->
 
 	</plugins>
 </build>
 
+
+	<!--
 	<reporting>
 		<plugins>
 			<plugin>
@@ -119,8 +112,6 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-	<!--
     <reporting>
         <plugins>
               <plugin>

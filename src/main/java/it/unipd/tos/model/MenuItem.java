@@ -3,6 +3,8 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.tos.model;
 
+import java.util.Comparator;
+
 public class MenuItem {
     private final Type itemType;
     private String name;
@@ -16,5 +18,13 @@ public class MenuItem {
 
     public double getItemPrice(){
         return price;
+    }
+
+    /**
+     * Tells whether menuItem is a pizza
+     * @return true is pizza
+     */
+    public boolean isPizza(){
+        return itemType == Type.PIZZA;
     }
 }

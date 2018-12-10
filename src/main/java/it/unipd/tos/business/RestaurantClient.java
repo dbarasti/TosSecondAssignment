@@ -12,13 +12,13 @@ public class RestaurantClient implements RestaurantBill {
     @Override
     public double getOrderPrice(List<MenuItem> itemsOrdered) throws RestaurantBillException {
         //case no order item is present in list
-        if (itemsOrdered == null)
+        if (itemsOrdered == null) {
             return 0;
-
+        }
         //case order items are too much
-        if (itemsOrdered.size() > 20)
+        if (itemsOrdered.size() > 20) {
             throw new RestaurantBillException();
-
+        }
         //case client gets a discount
 
         return 0;

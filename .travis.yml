@@ -6,7 +6,10 @@ jdk: openjdk8
 cache:
   directories:
     - $HOME/.m2
+install:
+  - mvn clean install
+
 script:
-  - mvn install
+  - mvn clean verify
 after_success:
   - mvn clean test jacoco:report coveralls:report

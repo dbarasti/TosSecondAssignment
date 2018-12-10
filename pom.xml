@@ -102,7 +102,7 @@
 
 	</plugins>
 </build>
-
+<!--
 <reporting>
 	<plugins>
       	<plugin>
@@ -111,7 +111,6 @@
 			<reportSets>
 				<reportSet>
 					<reports>
-						<!-- select non-aggregate reports -->
 						<report>report</report>
 						</reports>
 				</reportSet>
@@ -119,4 +118,5 @@
       	</plugin>
 	</plugins>
 </reporting> 	
+-->
 </project>

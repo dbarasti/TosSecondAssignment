@@ -22,6 +22,7 @@
 	</properties>
 	<build>
   	<plugins>
+
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-checkstyle-plugin</artifactId>
@@ -69,8 +70,6 @@
 	</plugins>
 </build>
 
-
-	<!--
 	<reporting>
 		<plugins>
 			<plugin>
@@ -80,20 +79,6 @@
 			</plugin>
 		</plugins>
 	</reporting>
-    <reporting>
-        <plugins>
-              <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>report</report>
-                            </reports>
-                    </reportSet>
-                </reportSets>
-              </plugin>
-        </plugins>
-    </reporting>
-    -->
+
+
 </project>

@@ -6,11 +6,15 @@ package it.unipd.tos.model;
 public class MenuItem {
     private final Type itemType;
     private String name;
-    private Float price;
+    private double price;
 
-    public MenuItem(Type itemType, String name, Float price) {
+    public MenuItem(Type itemType, String name, double price) {
         this.itemType = itemType;
         this.name = name;
         this.price = price;
+    }
+
+    public double getItemPrice(){
+        return price;
     }
 }

@@ -6,13 +6,12 @@ package it.unipd.tos;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.Assert;
 
 /**
  * Unit test for simple RestaurantBill.
  */
-public class RestaurantBillTest
-    extends TestCase
-{
+public class RestaurantBillTest{
     /**
      * Create the test case
      *
@@ -20,22 +19,7 @@ public class RestaurantBillTest
      */
     public RestaurantBillTest(String testName )
     {
-        super( testName );
+        Assert.assertTrue(true);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( RestaurantBillTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }

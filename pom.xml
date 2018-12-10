@@ -60,6 +60,13 @@
 		<plugin>
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.3-SNAPSHOT</version>
+		</plugin>
+
+		<!--
+		<plugin>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.7.1.201405082137</version>
 			<executions>
 				<execution>
@@ -98,11 +105,10 @@
 				</execution>
 			</executions>
 		</plugin>
-
+		-->
 
 	</plugins>
 </build>
-<!--
 <reporting>
 	<plugins>
       	<plugin>
@@ -117,6 +123,5 @@
 			</reportSets>
       	</plugin>
 	</plugins>
-</reporting> 	
--->
+</reporting>
 </project>

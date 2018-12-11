@@ -63,12 +63,7 @@ public class RestaurantClient implements RestaurantBill {
                 .filter(MenuItem::isPizza)
                 .map(MenuItem::getItemPrice)
                 .min(Double::compareTo);
-        if (cheapestPizzaPrice.isPresent()){
-            return cheapestPizzaPrice.get();
-        }
-        else{
-            return 0;
-        }
+        return cheapestPizzaPrice.orElse(0.0);
     }
 
     /**
@@ -76,15 +71,11 @@ public class RestaurantClient implements RestaurantBill {
      * @return count of pizzas in the order list or 0 if no pizza is present :(
      */
     private int getCountOfPizzasInOrder(List<MenuItem> itemsOrdered) {
-        //if itemsOrdered is empty then it's obvious that there is no pizza
-        if(itemsOrdered == null) {
-            return 0;
-        }
-        else{
-             return  (int) itemsOrdered.stream()
-                    .filter(MenuItem::isPizza)
-                    .count();
-        }
+
+         return  (int) itemsOrdered.stream()
+                .filter(MenuItem::isPizza)
+                .count();
+
     }
 
     /**

@@ -12,12 +12,19 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class RestaurantClientTest {
+
+    public static final int DISCOUNT_PERCENTAGE = 5;
     RestaurantClient restaurantClient = new RestaurantClient();
+
     List<MenuItem> acceptedItemsOrderedAsList = new ArrayList();
-
     List<MenuItem> moreThanTwentyItemsOrderedAsList = new ArrayList();
+    List<MenuItem> moreThanHundredEurosLessThanTenPizzasOrderAsList = new ArrayList<>();
+    List<MenuItem> moreThanHundredEurosMoreThanTenPizzasOrderAsList = new ArrayList<>();
 
-    //builds an orderList
+
+    /**
+     * fill the lists according to their names
+     */
     @Before
     public void buildOrdersLists(){
         acceptedItemsOrderedAsList.add(new MenuItem(Type.PIZZA, "Margherita", 4.70));
@@ -56,6 +63,37 @@ public class RestaurantClientTest {
         moreThanTwentyItemsOrderedAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 6.70));
         moreThanTwentyItemsOrderedAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 6.60));
 
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 10.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 8.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 4.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 8.50));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 9.20));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.00));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Cacio e Pepe abbondante", 9.50));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Carbonara abbondante", 9.60));
+        moreThanHundredEurosLessThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 10.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 8.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Margherita", 4.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 8.50));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 9.20));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.00));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 9.20));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.00));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PIZZA, "Salame Piccante", 7.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Cacio e Pepe abbondante", 9.50));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Carbonara abbondante", 9.60));
+        moreThanHundredEurosMoreThanTenPizzasOrderAsList.add(new MenuItem(Type.PRIMO, "Amatriciana", 8.60));
+
     }
 
 
@@ -82,6 +120,29 @@ public class RestaurantClientTest {
                 .sum();
         try {
             assertEquals(assertionResult, restaurantClient.getOrderPrice(acceptedItemsOrderedAsList),0.0);
+        } catch (RestaurantBillException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount(){
+        double assertionResult = 108.60 - ((108.60*DISCOUNT_PERCENTAGE)/100);
+        try {
+            assertEquals(assertionResult, restaurantClient.getOrderPrice(moreThanHundredEurosLessThanTenPizzasOrderAsList),0.0);
+        } catch (RestaurantBillException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza(){
+        double initialBill = 132.40;
+        double cheapestPizzaPrice = 4.60;
+        double billWithoutCheapestPizza = initialBill - cheapestPizzaPrice;
+        double assertionResult = billWithoutCheapestPizza - ((billWithoutCheapestPizza*DISCOUNT_PERCENTAGE)/100);
+        try {
+            assertEquals(assertionResult, restaurantClient.getOrderPrice(moreThanHundredEurosMoreThanTenPizzasOrderAsList),0.0);
         } catch (RestaurantBillException e) {
             e.printStackTrace();
         }

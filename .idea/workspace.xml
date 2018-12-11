@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd1a8f32-4e21-4fce-ab8b-0f2e5d211b2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unipd/tos/business/RestaurantBillTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/unipd/tos/business/RestaurantClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unipd/tos/business/RestaurantClientTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,12 +12,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/secondAssignment$RestaurantClientTest_getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount.ic" NAME="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount Coverage Results" MODIFIED="1544525680749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unipd.tos.business.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/secondAssignment$RestaurantClientTest_getOrderPrice_NoDiscountAppliedOnBill_correctBillSum.ic" NAME="RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum Coverage Results" MODIFIED="1544524232958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unipd.tos.business.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="293" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/business/RestaurantBill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="132">
               <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
               <folding>
                 <element signature="e#0#443#0" expanded="true" />
@@ -31,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/business/RestaurantClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="958">
+            <state relative-caret-position="1606">
               <caret line="75" column="79" selection-start-line="75" selection-start-column="79" selection-end-line="75" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/unipd/tos/business/RestaurantClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="83" column="104" selection-start-line="83" selection-start-column="104" selection-end-line="83" selection-end-column="104" />
+            <state relative-caret-position="464">
+              <caret line="144" column="121" selection-start-line="144" selection-start-column="121" selection-end-line="144" selection-end-column="121" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,12 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/model/MenuItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="484">
               <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +99,7 @@
       <find>coveralls</find>
       <find>2.20</find>
       <find>compiler</find>
+      <find>5</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,14 +227,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544485638784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544526458760" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/it/unipd/tos" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -243,7 +250,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum">
+  <component name="RunManager" selected="JUnit.RestaurantClientTest.getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza">
+    <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unipd.tos.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unipd.tos.business" />
+      <option name="MAIN_CLASS_NAME" value="it.unipd.tos.business.RestaurantClientTest" />
+      <option name="METHOD_NAME" value="getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restaurant-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unipd.tos.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unipd.tos.business" />
+      <option name="MAIN_CLASS_NAME" value="it.unipd.tos.business.RestaurantClientTest" />
+      <option name="METHOD_NAME" value="getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restaurant-manager" />
       <extension name="coverage">
@@ -294,6 +333,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestaurantClientTest.getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza" />
+        <item itemvalue="JUnit.RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" />
         <item itemvalue="JUnit.RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum" />
         <item itemvalue="JUnit.RestaurantClientTest.getOrderPrice_NullFirstParameter_returnsZero" />
         <item itemvalue="JUnit.RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" />
@@ -313,26 +354,12 @@
       <workItem from="1544429988564" duration="4180000" />
       <workItem from="1544443160099" duration="11125000" />
       <workItem from="1544456480125" duration="1527000" />
-      <workItem from="1544479974223" duration="5664000" />
+      <workItem from="1544479974223" duration="5914000" />
+      <workItem from="1544524153144" duration="2178000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 36m 25s.xml">
-      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 37m 38s.xml">
-      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 37m 51s.xml">
-      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 38m 14s.xml">
-      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 38m 45s.xml">
-      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown - 2018.12.11 at 00h 39m 11s.xml">
       <configuration name="RestaurantClientTest.getOrderPrice_MoreThanTwentyOrderItems_ExceptionThrown" configurationId="JUnit" />
     </history-entry>
@@ -342,25 +369,45 @@
     <history-entry file="RestaurantClientTest_getOrderPrice_NoDiscountAppliedOnBill_correctBillSum - 2018.12.11 at 00h 46m 13s.xml">
       <configuration name="RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_NoDiscountAppliedOnBill_correctBillSum - 2018.12.11 at 00h 47m 24s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_NoDiscountAppliedOnBill_correctBillSum - 2018.12.11 at 11h 30m 34s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_NoDiscountAppliedOnBill_correctBillSum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount - 2018.12.11 at 11h 40m 38s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount - 2018.12.11 at 11h 40m 49s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount - 2018.12.11 at 11h 41m 22s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount - 2018.12.11 at 11h 54m 41s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosLessThanTenPizzas_correctBillSumWithDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantClientTest_getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza - 2018.12.11 at 12h 07m 14s.xml">
+      <configuration name="RestaurantClientTest.getOrderPrice_MoreThanHundredEurosMoreThanTenPizzas_correctBillSumWithDiscountAndFreeCheapestPizza" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22496000" />
+    <option name="totallyTimeSpent" value="24924000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="2560" height="1413" extended-state="6" />
+    <frame x="0" y="27" width="2560" height="1344" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15831344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15950677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49960223" weight="0.32967892" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960223" visible="true" weight="0.32967892" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920446" visible="true" weight="0.3294702" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,8 +415,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5003978" side_tool="true" visible="true" weight="0.32967892" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.50079554" side_tool="true" visible="true" weight="0.3294702" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.434024" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49960223" weight="0.32967892" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32975337" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,13 +514,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/model/MenuItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/business/RestaurantBill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="132">
+          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
           <folding>
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#0#443#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -483,20 +532,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/business/RestaurantBill.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/model/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#443#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/unipd/tos/business/RestaurantClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="958">
+        <state relative-caret-position="1606">
           <caret line="75" column="79" selection-start-line="75" selection-start-column="79" selection-end-line="75" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -506,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/unipd/tos/business/RestaurantClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="83" column="104" selection-start-line="83" selection-start-column="104" selection-end-line="83" selection-end-column="104" />
+        <state relative-caret-position="464">
+          <caret line="144" column="121" selection-start-line="144" selection-start-column="121" selection-end-line="144" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

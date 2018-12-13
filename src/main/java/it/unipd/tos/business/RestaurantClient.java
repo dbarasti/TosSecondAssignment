@@ -31,7 +31,7 @@ public class RestaurantClient implements RestaurantBill {
         }
         //case order items are too much
         if (itemsOrdered.size() > 20) {
-            throw new RestaurantBillException();
+            throw new RestaurantBillException("Errore: troppe ordinazioni, scendere sotto le 21");
         }
         //from now on here client has to pay something for sure
         //let's calculate total to be paid...
